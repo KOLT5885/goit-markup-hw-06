@@ -1118,6 +1118,8 @@ p {
 }
 
 .modal .modal-button-submit {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 200px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
