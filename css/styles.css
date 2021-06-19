@@ -963,11 +963,16 @@ p {
 
   min-height: 581px;
   background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
   transform: translate(-50%, -50%) scale(1, 1);
 
   transition: opacity var(--transition-duration) var(--transition-timing-function),
     transform var(--transition-duration) var(--transition-timing-function),
-    visibility var(--transition-duration) var(--transition-timing-function);
+    visibility var(--transition-duration) var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal-button {
@@ -1083,6 +1088,7 @@ p {
 .modal .modal-checkbox {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
