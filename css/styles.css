@@ -430,11 +430,12 @@ p {
 .team .team-list {
   display: flex;
 
-  width: 270px;
   font-size: 16px;
 }
 
 .team-list > .item {
+  width: 270px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -452,6 +453,7 @@ p {
 
 .team .img {
   display: block;
+  width: 100%;
 }
 
 .team-list .team-description {
@@ -1116,6 +1118,11 @@ p {
 .modal .modal-checkbox-input:checked + .svg-checkbox {
   border: 0px solid var(--accent-color);
   background-color: var(--accent-color);
+}
+
+.modal .modal-checkbox:hover > .svg-checkbox,
+.modal .modal-checkbox:focus > .svg-checkbox {
+  border: 2px solid var(--accent-color);
 }
 
 .modal .modal-for-button {
